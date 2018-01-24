@@ -23,9 +23,6 @@ public class Facebook {
         System.out.println(driver.getCurrentUrl());
         
        
-        
-
-        // Print a Log In message to the screen
        // System.out.println("Successfully opened the facebook website");
 
         //Wait for 6 Sec
