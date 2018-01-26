@@ -11,6 +11,7 @@ public class Radiobuttons_CustomizedXPath {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.keynotesupport.com/websites/contact-form-example-radio-buttons.shtml");
 		driver.findElement(By.xpath("//input[@value='QBP']")).click();
+		driver.close();
 
 	}
 
