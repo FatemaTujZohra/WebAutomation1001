@@ -1,5 +1,3 @@
-//  //tagName[@attribute='value'] Customized XPath syntax
-
 
 package seleniumlocatorsfirefoxbrowser;
 
