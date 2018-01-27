@@ -13,21 +13,25 @@ public class Radiobuttons_Dynamically {
 		driver.get("https://www.keynotesupport.com/websites/contact-form-example-radio-buttons.shtml");
 
 		int count =driver.findElements(By.xpath("//input[@name='software']")).size();
-
+		//String[] text =new String[4];
+		String text;
 		for(int i=0;i<count;i++)
 
-		{
-
-			driver.findElements(By.xpath("//input[@name='software']")).get(2).click();
-
-			String text=driver.findElements(By.xpath("//input[@name='software']")).get(0).getAttribute("value");
-
-			if(text.equals("Excel"));
 			{
-				driver.findElements(By.xpath("//input[@name='software']")).get(0).click();
+			driver.findElements(By.xpath("//input[@name='software']")).get(0).click();
+			//driver.findElements(By.xpath("//input[@name='software']")).get(3).click();
 
-			}
-		}
+			
+			text=driver.findElements(By.xpath("//input[@name='software']")).get(i).getAttribute("value");
+                // System.out.println(text[i]);
+			//if(text == "Excel")
+			
+					{
+						//int j=i;
+							driver.findElements(By.xpath("//input[@name='software']")).get(0).click();
+
+					}
+				}
 
 	}
 
