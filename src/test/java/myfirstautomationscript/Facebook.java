@@ -1,8 +1,10 @@
 package myfirstautomationscript;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 
 public class Facebook {
@@ -21,10 +23,10 @@ public class Facebook {
 		System.out.println(driver.getTitle());
 		//System.out.println(driver.getPageSource());
 		System.out.println(driver.getCurrentUrl());
-
-
-		// System.out.println("Successfully opened the facebook website");
-
+		
+	
+       // System.out.println("Successfully opened the facebook website")
+		
 		//Wait for 6 Sec
 		//Thread.sleep(6000);
 

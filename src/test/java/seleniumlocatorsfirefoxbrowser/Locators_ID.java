@@ -8,11 +8,11 @@ public class Locators_ID {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.get("https://www.facebook.com");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.facebook.com");
 
-        
-        
+
+
 		driver.findElement(By.id("email")).click();
 		driver.findElement(By.id("email")).sendKeys("pautit@yahoo.com");
 		Thread.sleep(1000);
@@ -20,7 +20,7 @@ public class Locators_ID {
 		driver.findElement(By.id("pass")).click();
 		driver.findElement(By.id("pass")).sendKeys("ghtsdsf");
 		Thread.sleep(1000);
-		
+
 		driver.close();
 	}
 
