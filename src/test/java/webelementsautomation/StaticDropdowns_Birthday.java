@@ -19,10 +19,10 @@ public class StaticDropdowns_Birthday {
 		//driver.get("https://www.facebook.com");
 		driver.get("https://www.facebook.com");
 
-		
+
 		//driver.findElement(By.xpath("//*[@id=\"month\"]")).sendKeys("Mar");
-		//In this way I was not able to select March as a Month.I wanted to select a birthday of Mar 29 1993
-		
+		//In this way I was not able to select March as a Month.I wanted to select a birthday of Mar 20 1994
+		// So, I declared 3 separate objects for Select class and then got selected by value or visible text.
 		Select m= new Select(driver.findElement(By.xpath("//*[@id=\"month\"]")));
 		m.selectByValue("3");
 		Select d= new Select(driver.findElement(By.xpath("//*[@id=\"day\"]")));
