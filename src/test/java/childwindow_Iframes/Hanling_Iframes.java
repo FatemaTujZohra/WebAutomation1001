@@ -19,7 +19,9 @@ public class Hanling_Iframes {
 		//driver.findElement(By.cssSelector("div.w3-example:nth-child(10) > a:nth-child(3)")).click();
 		
 	
-		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[id='iframeResult']")));
+		//driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[id='iframeResult']")));
+		driver.switchTo().frame(0);
+		Thread.sleep(4000);
 		//driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\'iframe\']")));
 		
 		driver.findElement(By.xpath("/html/body/button")).click();
@@ -27,5 +29,10 @@ public class Hanling_Iframes {
 	}
 
 }
+
+// <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+// Click me to display Date and Time.</button>
 //*[@id="iframe"]
 //*[@id="iframe"]
+// body > button:nth-child(2)
+//  /html/body/button
